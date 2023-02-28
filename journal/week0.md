@@ -1,7 +1,8 @@
 # Week 0 — Billing and Architecture
 
-For the first week in the AWS free code camp I worked on verifying my aws account and setting up billing alarms as well as a budget. I set my budget for to $20 per month for this project and set a billing alaram to alert me once I approach $10.
-
+<p> For the first week in the AWS free code camp I worked on verifying my aws account and setting up billing alarms as well as a budget. I set my budget for to $20 per month for this project and set a billing alaram to alert me once I approach $10.<p>
+  
+## Required Homework  
 I used Lucid charts to build out my conceptual and logical diagrams. Below are the links to both of them in Lucid charts:
 
 Conceptual Diagram
