@@ -1,5 +1,22 @@
 # Week 0 — Billing and Architecture
 
+### Install and Verify AWS CLI
+I installed the AWS CLI for Linux by using the following commands to download, unzip and install the package: <br>
+``` 
+    curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+    unzip awscliv2.zip
+    sudo ./aws/install
+```
+I followed along using the AWS CLI install documentation: <br>
+[AWS CLI Install Documentation Page](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
+
+### Create a Budget
+I created two budgets trying out both the AWS console method and the AWS CLI method and I must say I like the AWS CLI method better. <br>
+
+### Recreate Logical Architectural Deisgn
+
+
 <p> For the first week in the AWS free code camp I worked on verifying my aws account and setting up billing alarms as well as a budget. I set my budget for to $20 per month for this project and set a billing alaram to alert me once I approach $10.<p>
   
 ## Required Homework  
