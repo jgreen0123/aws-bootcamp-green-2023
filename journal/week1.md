@@ -149,4 +149,19 @@ volumes:
   db:
     driver: local
 ```
+### Added Notifications <br>
+#### Updated the open API to add notifications:
+![Open API notifications](assets/openapinotifications.png)
 
+#### Created new notifications backend endpoint:
+![Open API notifications](assets/notificationsendpoint.png)
+
+#### Added notifications page:
+![Open API notifications](assets/frontendpage.png)
+
+![Open API notifications](assets/notifications1.png)
+
+![Open API notifications](assets/notifications2.png)
+
+### Added a database exploer to vscode: <br>
+![Open API notifications](assets/dbconnect.png)
