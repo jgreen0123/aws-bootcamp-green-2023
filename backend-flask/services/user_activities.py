@@ -11,10 +11,6 @@ class UserActivities:
 
       now = datetime.now(timezone.utc).astimezone()
       # xray -----
-      dict = {
-        "now": now.isoformat()
-      }
-      segment.put_metadata('key', dict, 'namespace')
       if user_handle == None or len(user_handle) < 1:
         model['errors'] = ['blank_user_handle']
       else:
@@ -34,5 +30,5 @@ class UserActivities:
       #   "now": now.isoformat(),
       #  "results-size": len(model['data'])
       #}
-      subsegment.put_metadata('key', dict, 'namespace')
+      #subsegment.put_metadata('key', dict, 'namespace')
       return model
