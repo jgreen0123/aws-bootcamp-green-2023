@@ -30,9 +30,9 @@ from opentelemetry.sdk.trace.export import ConsoleSpanExporter, SimpleSpanProces
 # Cloudwatch Logs --------
 import watchtower
 import logging
-from time import strftime
 
 # Rollbar -------
+from time import strftime
 import os
 import rollbar
 import rollbar.contrib.flask
@@ -93,7 +93,7 @@ cors = CORS(
 
 # Rollbar -------
 rollbar_access_token = os.getenv('ROLLBAR_ACCESS_TOKEN')
-@app.before_first_request
+@app.before_request
 def init_rollbar():
     """init rollbar module"""
     rollbar.init(
@@ -196,7 +196,7 @@ def data_activities():
 @app.route("/api/activities/<string:activity_uuid>", methods=['GET'])
 #@xray_recorder.capture('activities_show')
 def data_show_activity(activity_uuid):
-  data = ShowActivity.run(activity_uuid=activity_uuid)
+  data = ShowActivities.run(activity_uuid=activity_uuid)
   return data, 200
 
 @app.route("/api/activities/<string:activity_uuid>/reply", methods=['POST','OPTIONS'])
